@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">顺筹文化</string>
+    <item name="def_id" type="id"/>
+
+    <string name="family_data">1.只填写15--69岁常驻人口\n2.先填写男性，按照年龄从大到小排序\n2.再填写女性，按照年龄从大到小排序</string>
+
+
+</resources>

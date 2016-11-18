@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+
+        >
+
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/view_topbar"
+
+            />
+
+        <com.shunchou.culture.view.BannerLayout
+            android:id="@+id/banner2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title_layout"
+            android:layout_marginTop="10dp"
+            app:autoPlayDuration="5000"
+            app:defaultImage="@mipmap/ic_launcher"
+            app:indicatorMargin="10dp"
+            app:indicatorPosition="centerBottom"
+            app:indicatorShape="oval"
+            app:indicatorSpace="3dp"
+            app:scrollDuration="900"
+            app:selectedIndicatorColor="?attr/colorAccent"
+            app:selectedIndicatorHeight="6dp"
+            app:selectedIndicatorWidth="6dp"
+            app:unSelectedIndicatorColor="#99ffffff"
+            app:unSelectedIndicatorHeight="6dp"
+            app:unSelectedIndicatorWidth="6dp" />
+
+   <!--     <com.shunchou.culture.view.MyGridView
+            android:id="@+id/gridview"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0.0dip"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0dip"
+
+            />-->
+        <com.shunchou.culture.view.MyGridView
+            android:id="@+id/gridview"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0.0dip"
+            android:layout_marginTop="5dp"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0dip"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/fg_right_menu"
+        android:name="com.shunchou.culture.fragment.RightFragment"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:tag="RIGHT"
+        tools:layout="@layout/fg_right" />
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_barlayout"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#0F0704"
+            android:visibility="gone"
+
+            >
+
+            <ImageView
+                android:id="@+id/close_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/close" />
+
+            <TextView
+                android:id="@+id/mydata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/close_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/personicon"
+                android:drawablePadding="15dp"
+                android:text="我的资料"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/text_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mydata"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/save"
+                android:drawablePadding="15dp"
+                android:text="已保存试题"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_save"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/personicon"
+                android:drawablePadding="15dp"
+                android:text="登陆"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/personicon"
+                android:drawablePadding="15dp"
+                android:text="退出"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#32CCFE"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="山东健康教育"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_opensettins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/personicon" />
+        </RelativeLayout>
+
+
+        <com.shunchou.culture.view.BannerLayout
+            android:id="@+id/banner2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title_layout"
+            android:layout_marginTop="10dp"
+            app:autoPlayDuration="5000"
+            app:defaultImage="@mipmap/ic_launcher"
+            app:indicatorMargin="10dp"
+            app:indicatorPosition="centerBottom"
+            app:indicatorShape="oval"
+            app:indicatorSpace="3dp"
+            app:scrollDuration="900"
+            app:selectedIndicatorColor="?attr/colorAccent"
+            app:selectedIndicatorHeight="6dp"
+            app:selectedIndicatorWidth="6dp"
+            app:unSelectedIndicatorColor="#99ffffff"
+            app:unSelectedIndicatorHeight="6dp"
+            app:unSelectedIndicatorWidth="6dp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/banner2"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <com.shunchou.culture.view.MyGridView
+                android:id="@+id/gridview"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="0.0dip"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.0dip" />
+        </ScrollView>
+
+
+    </RelativeLayout>-->

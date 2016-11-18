@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/drawerlayoutbackground"
+    android:gravity="right"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/close_img"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/close" />
+
+    <TextView
+        android:id="@+id/mydata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/person_ziliao"
+        android:drawablePadding="15dp"
+        android:text="我的资料"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/text_save"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close_img"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@mipmap/save"
+        android:drawablePadding="15dp"
+        android:text="已保存试题"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@mipmap/personicon"
+        android:drawablePadding="15dp"
+        android:text="登陆"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/text_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@mipmap/exit"
+        android:drawablePadding="15dp"
+        android:text="退出"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

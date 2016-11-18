@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="dominant_tone_one">#19e692</color>
+
+    <color name="dominant_tone_two">#999999</color>
+
+
+    <color name="black">#000000</color>
+    <color name="homepageredcolor">#ab2a2a</color>
+    <color name="white">#ffffff</color>
+    <color name="line">#ffd3dde6</color>
+
+
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#666666</color>
+
+
+    <color name="blue">#2F9AF2</color>
+    <color name="yellow">#FFE357</color>
+    <color name="red">#EC5C4D</color>
+
+
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="colorselect">#59D4FD</color>
+    <color name="colorcede">#D7E0E7</color>
+
+    <color name="color_blueselect">#32CCFE</color>
+
+</resources>

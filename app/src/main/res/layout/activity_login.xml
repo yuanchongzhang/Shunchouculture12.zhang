@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/register_background"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="180dp"
+        android:background="#D4F1FF"
+        android:orientation="vertical"
+     >
+
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="账号或注册的邮箱"
+            android:drawableLeft="@mipmap/personname"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:background="@null"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7C7C7C"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edittext_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="请输入密码"
+
+            android:drawableLeft="@mipmap/icon_pwd"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/loginbtn"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/register_btn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/register_img"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/forget_pwd"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="找回密码"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

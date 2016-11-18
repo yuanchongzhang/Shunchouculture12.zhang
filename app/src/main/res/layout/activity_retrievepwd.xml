@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#21B9FF"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edittext_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="150dp"
+        android:background="#D4F1FF"
+        android:drawableLeft="@mipmap/icon_pwd"
+        android:drawablePadding="20dp"
+        android:hint="请输入密码"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        />
+
+
+    <EditText
+        android:id="@+id/edittext_reqpwd"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#D4F1FF"
+        android:drawableLeft="@mipmap/icon_pwd"
+        android:drawablePadding="20dp"
+        android:hint="确认新密码"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@mipmap/determineicon"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</LinearLayout>
